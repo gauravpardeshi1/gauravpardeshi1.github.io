@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.d7c10df3.js",
+    "main.js": "/static/js/main.b4745f52.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Profile.png": "/static/media/Profile.a1302a4df519c7106258.png",
     "static/media/Z5.png": "/static/media/Z5.d47ed4eadfec13a576fa.png",
     "static/media/nykaa.png": "/static/media/nykaa.fd9cd30b028f2edd5f92.png",
     "static/media/flipkart.png": "/static/media/flipkart.01336dc52ee546eb922b.png",
+    "static/media/1mg.png": "/static/media/1mg.6b27c93633b41250dad6.png",
     "static/media/burberry.png": "/static/media/burberry.288ff3637fd13c6b5781.png",
     "static/media/Resume.pdf": "/static/media/Resume.031a4eea360b5c093b32.pdf",
     "static/media/Calender.png": "/static/media/Calender.91a37cca4548020630f1.png",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.d7c10df3.js.map": "/static/js/main.d7c10df3.js.map",
+    "main.b4745f52.js.map": "/static/js/main.b4745f52.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d7c10df3.js"
+    "static/js/main.b4745f52.js"
   ]
 }
