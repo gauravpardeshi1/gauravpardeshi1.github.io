@@ -1,0 +1,22 @@
+#github{
+    width: 80%;
+    margin: auto;
+   
+}
+.react-activity-calendar{
+    margin-top: 40px;
+}
+.g-card{
+    width:95% ;
+    height:150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    display:none;
+}
+
+.g-card>img{
+    height: 100%;
+    width: 30%;
+}

@@ -1,24 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
-const About = () => {
+import React from "react";
+import "../Styles/About.css";
+import { Type } from "./Type";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import DescriptionIcon from "@material-ui/icons/Description";
+import PublicIcon from "@material-ui/icons/Public";
+import { Introduction } from "./Introduction";
+import { Timeline } from "./Timeline";
+import { Techstacks } from "./Techstacks";
+import Home2 from "./Home/Home";
+export const About = () => {
   return (
-    <DIV>
+    <>
+    
+      <div  className="about center">
       
-    </DIV>
-  )
-}
-
-export default About
-
-const DIV=styled.div`
-width:98%;
-height:700px;
-border:1px solid red;
-
-h1{
-    font-size: 2rem;
-    font-family: "Secular One", sans-serif;
-    letter-spacing: 2px;
-    color:white;
-}
-`
+        <Home2/>
+      </div>
+     
+      <Introduction />
+      <section id="#skills">
+        <Techstacks />
+      </section>
+    
+    </>
+  );
+};

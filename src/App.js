@@ -1,29 +1,35 @@
 
 import './App.css';
-import Header from './Component/Navbar';
-import AllRoutes from './Component/AllRoutes';
-import styled from 'styled-components'
-import { useContext } from 'react';
-import { AuthContext } from './Context/Context';
+import { ThemeContext } from "./Context/theme";
+import React from 'react';
+import { Header } from './Pages/Header';
+import { About } from './Pages/About';
+import { Github } from './Pages/Github'
+import { Projects } from './Pages/Projects'
+import { Contact } from './Pages/Contact'
+
 function App() {
-  const {state}=useContext(AuthContext)
-  console.log("Auth",state);
+  const [{ themename }] = React.useContext(ThemeContext);
+
+
   return (
-    <DIV className="App" state={state}>
-    {/* <Navbar/> */}
-    <Header/>
-    
-    <AllRoutes/>
-    </DIV>
+    <div id="top" className={`${themename} app`}>
+      <section id="#home">
+        <Header />
+      </section>
+      <About />
+      <Github />
+      <section id="#projects">
+        <Projects />
+      </section>
+      <section id="#contact">
+        <Contact />
+      </section>
+
+    </div>
   );
 }
 
 export default App;
 
 
-const DIV = styled.div
-
-`
-width:100%;
-${({state})=> (state?`background:DarkSlateGrey;`:`background:Black;`)}
-`

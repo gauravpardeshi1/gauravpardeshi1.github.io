@@ -1,81 +1,70 @@
-import React from 'react'
-import styled from 'styled-components'
-import { MdAlternateEmail } from "react-icons/md";
-import { Slide } from "react-awesome-reveal";
-const Contact = () => {
-  return (
-    <DIV>
-      <DIV1>
-        <div>
-           <h4>Address</h4> 
-        </div>
-      </DIV1>
-      <Slide direction="right">
-      <DIV2>
-     
-        <input type="text" placeholder='Enter Your Name'/><br/>
-        
-      
-        <input type="text" placeholder='Enter Your Email'/><br/>
-        
-      
-        <input className='msg' type="text" placeholder='Enter Your Message'/><br/>
-        
-      
-      <button>Submit</button>
+import React, { useRef } from 'react';
+import '../Styles/Contact.css'
+import { Footer } from './Footer'
+export const Contact = () => {
 
-      </DIV2>
-      </Slide>
-    </DIV>
-  )
+
+
+    return (
+        <section className="contact section" id="contact">
+            <h2 className="section__title" data-aos="fade-right">
+                Get In <span className="different">Touch</span>
+            </h2>
+
+            <div className="contact-container container grid">
+                <div className="contact-content">
+                    <h3 id="contact-github" className="contact-title">Talk to Me</h3>
+                    <div className="contact-info">
+                        {/* mail */}
+                        <div className="contact-card">                          <h3 className="contact-card-title">Mail</h3>
+                            <span id="contact-email" className="contact-card-data">gauravpardeshi068@gmail.com</span>
+                        </div>
+                        {/* phone */}
+                        <div className="contact-card">
+                            <h3 className="contact-card-title">Mobile</h3>
+                            <span id="contact-phone" className="contact-card-data">+91 9175324590</span>
+                        </div>
+                        {/* Linkedin */}
+                        <div className="contact-card">
+                            <h3 className="contact-card-title">Linkedin</h3>
+                            <span id="contact-linkedin" className="contact-card-data">gaurav pardeshi</span>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <div className="contact-content">
+                    <h3 className="contact-title">Write me on Your Project</h3>
+                    <form className="contact-form">
+                        <div className="contact-from-div">
+                            <label htmlFor="" className="contact-from-tag">Name</label>
+                            <input type="text" name="name" className="contact-from-input" required />
+
+                        </div>
+                        <div className="contact-from-div">
+                            <label htmlFor="" className="contact-from-tag">Email</label>
+                            <input type="email" name="email" className="contact-from-input" required />
+
+                        </div>
+                        <div className="contact-from-div contact-from-area">
+                            <label htmlFor="" className="contact-from-tag">Project</label>
+                            <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" required />
+
+                        </div>
+                        <button className="button">
+                            Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+            <Footer />
+        </section>
+    )
 }
 
-export default Contact
-const DIV =styled.div`
-margin-top:50px;
-width:90%;
-height:auto;
-display:flex;
-justify-content:space-between;
-input{
-    width:100%;
-    height:30px;
-    margin-Bottom:5px;
-
-}
-.msg{
-    width:100%;
-    height:150px; 
-}
-button{
-    
-    padding:10px 50px;
-    margin-left:15px;
-    margin-right:400px;
-    margin-top:5px;
-}
-h4{
-    font-family: "Secular One", sans-serif;
-    letter-spacing: 2px;
-}
-`
-
-const DIV1 =styled.div`
-margin:auto;
-width:50%;
-height:400px;
-border:1px solid red
-
-`
-const DIV2 =styled.div`
-margin:auto;
-width:60%;
-padding:20px;
-height:auto;
-border:1px solid gray;
-background:white;
-
-
-
-
-`

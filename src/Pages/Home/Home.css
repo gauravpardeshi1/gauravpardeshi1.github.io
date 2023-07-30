@@ -1,0 +1,196 @@
+.home-container {
+    row-gap: 7rem;
+    
+  }
+  .home-content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    /* I need here some chenge */
+    column-gap: 2rem;
+    align-items: center;
+  }
+  
+
+  .home-social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+  
+  .home-social-icon {
+    font-size: 1.25rem;
+    color: rgb(238, 143, 19);
+  }
+  .home-social-icon:hover {
+    color:var(--clr-primary)
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    margin-top: 25px;
+    font-size: large;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    
+    background-color: var(--title-color-dark);
+  }
+  .home-title {
+    /* font-size:  2.75rem; */
+    color:rgb(238, 143, 19);
+    font-size: 40px;
+    margin-bottom: var(--mb-0-25);
+  }
+  /* .home-hand {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.4rem;
+  } */
+  
+  .home-subtitle {
+    position: relative;
+    font-size: var(--h2-font-size);
+    padding-left: 3rem;
+  
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+  }
+  .home-subtitle::before {
+    content: '';
+    position: absolute;
+  
+    width: 42px;
+    height: 2px;
+    background-color: rgb(216, 128, 13);
+    left: 0;
+    top: 1rem;
+  }
+  
+  .home-description {
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: var(--mb-3);
+    color:var(--clr-fg-alt);
+    font-size: medium;
+    
+  }
+  
+  .home-image {
+    background: url(../../Img/Hello.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    order: 1;
+    justify-self: center;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+    animation: profile_animate 8s ease-in-out infinite 1s;
+  }
+  
+  @keyframes profile_animate {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 20% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For large devices */
+  @media screen and (max-width: 992px) {
+    .home-content {
+      grid-template-columns: 100px repeat(2, 1fr);
+      column-gap: 1.25rem;
+    }
+    .home-subtitle {
+      padding-left: 3.75rem;
+      margin-bottom: var(--mb-1);
+    }
+    .home-subtitle::before {
+      width: 42px;
+      top: 0.8rem;
+    }
+    .home-description {
+      max-width: initial;
+      margin-bottom: var(--mb-0-25);
+    }
+    .home-image {
+      width: 250px;
+      height: 250px;
+      box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+    }
+    .button {
+      padding: 1rem 1.75rem;
+      
+    }
+    #home-button{
+      background:rgb(216, 128, 13);
+      font-size: x-large;
+      align-items: center;
+      font-weight: 700;
+      color:red;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .home-content {
+      grid-template-columns: 0.5fr 3fr;
+      padding-top: 3.5rem;
+    }
+    .home-subtitle {
+    }
+    .home-subtitle::before {
+    }
+    .home-description {
+    }
+    .home-image {
+      order: initial;
+      justify-self: initial;
+      width: 200px;
+      height: 200px;
+      box-shadow: inset 0 0 0 6px rgb(255 255 255/30%);
+    }
+    .home-data {
+      /* this class is in Data.jsx */
+      grid-column: 1/3; /* Span from the first to the third column */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .home-content {
+    }
+    .home-subtitle {
+    }
+    .home-subtitle::before {
+    }
+    .home-description {
+    }
+    .home-image {
+      width: 180px;
+      height: 180px;
+    }
+    .home-data {
+    }
+  }
+  
+  /* experiment */
